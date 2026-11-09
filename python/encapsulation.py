@@ -8,61 +8,86 @@ it allows us to control access to the data using:
 
 #------------------GETTER AND SETTER
 
-class Bank:
-    # class attribute
-    bank_name = 'HDFC'
+# class Bank:
+#     # class attribute
+#     bank_name = 'HDFC'
 
-    def __init__(self,Holder_name, acc_number, ifsc):
-        self._acc_number = acc_number
-        self.holder_name = Holder_name
-        self.ifsc = ifsc
-        self.__balance = 0 # private member
+#     def __init__(self,Holder_name, acc_number, ifsc):
+#         self._acc_number = acc_number
+#         self.holder_name = Holder_name
+#         self.ifsc = ifsc
+#         self.__balance = 0 # private member
 
-    def get_details(self):
-        print(f"Bank Name : {Bank.bank_name}")
-        print(f"Holder Name : {self.holder_name}")
-        print(f"Account Number : {self._acc_number}")
-        print(f"IFSC Code : {self.ifsc}")
+#     def get_details(self):
+#         print(f"Bank Name : {Bank.bank_name}")
+#         print(f"Holder Name : {self.holder_name}")
+#         print(f"Account Number : {self._acc_number}")
+#         print(f"IFSC Code : {self.ifsc}")
 
     
-    def deposit(self,amount):
-        if amount < 0:
-            print("Enter a valid amount")
-        else:
-            self.__balance += amount
-            print(f"Amount Deposited : {amount}")
+#     def deposit(self,amount):
+#         if amount < 0:
+#             print("Enter a valid amount")
+#         else:
+#             self.__balance += amount
+#             print(f"Amount Deposited : {amount}")
 
-    def withdraw(self,amount):
-        if amount > self.__balance:
-            print("Insufficient Balance..")
+#     def withdraw(self,amount):
+#         if amount > self.__balance:
+#             print("Insufficient Balance..")
 
-        else:
-            self.__balance -= amount
-            print(f"amount withdrawn : {amount}")
+#         else:
+#             self.__balance -= amount
+#             print(f"amount withdrawn : {amount}")
 
 
-    def get_balance(self):
-        print(f"Balance : {self.__balance}")
+#     def get_balance(self):
+#         print(f"Balance : {self.__balance}")
 
-    def set_balance(self,amount):
-        self.__balance = amount
-        print(f"Amount {amount} updated successfully")
+#     def set_balance(self,amount):
+#         self.__balance = amount
+#         print(f"Amount {amount} updated successfully")
+
+#     @property
+#     def balance(self):
+#         return self.__balance
+
+#     @balance.setter
+#     def balance(self, amount):
+#         self.__balance = amount
+
+
+
+
+# arshad = Bank(123456,'arshad','SBIN00031')
+
+# print(arshad.balance)
+
+# arshad.balance = "$4000"
+
+# print(arshad.balance)   
+
+#--------------------------------------------------------------------------------------------------------
+
+class Home:
+    house_name ="ams manzil"
+
+    def __init__(self,members,type,balance,location):
+        self.members = members
+        self.type = type
+        self.balance = balance
+        self.__location = location
+
+    def house(self):
+        print(self.balance)
+        print(self.__location)
 
     @property
-    def balance(self):
-        return self.__balance
-
-    @balance.setter
-    def balance(self, amount):
-        self.__balance = amount
+    def location(self):
+        return (self.__location)
 
 
+a = Home(5 , 'own property','interior work','calicut')
 
-
-arshad = Bank(123456,'arshad','SBIN00031')
-
-print(arshad.balance)
-
-arshad.balance = "$4000"
-
-print(arshad.balance)   
+a.house()
+print(a.location)
