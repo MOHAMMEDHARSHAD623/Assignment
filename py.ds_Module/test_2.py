@@ -68,13 +68,13 @@
 #     print(a.seek(0))
 #     print(a.read(15))
 
-print('\n-------------------------------')
+# print('\n-------------------------------')
 
 # with open('employee_records.csv','r') as a:
 #     a.seek(10)
 #     print(a.read(25))
 
-print('\n-------------------------------')
+# print('\n-------------------------------')
 
 # with open('employee_records.csv','r') as a:
 #     print(a.readline())

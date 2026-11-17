@@ -19,9 +19,10 @@ write - w
 read + write - r+
 write + read - w+
 append - a
-append + write - a+
+append + read - a+
 read binary  = rb+ / r+b
 write binary = wb+ / w+b
+exclusive creation - x
 for checking cursor where it is use - tell()
 for changing cursor position by using - seek(index  value)
 to convert string to binary type use - ****.encode()
@@ -59,8 +60,7 @@ after read it will be in last position
 
 #----------------------------------------------------------------------------------
 
-"""appent - a
-appent + write - a+
+"""
 seek
 tell
 read
@@ -205,3 +205,19 @@ os.path.isdir() -used for checking the folder is existing in this path if yes it
 # print(os.getcwd())
 
 # os.mkdir('adhi')
+# os.remove('sree')
+
+# import os
+# print(os.path.exists('employee_records.csv')) #here, exist  will work the file or folder is in the  path if it exist return true
+# print(os.path.isfile('sree')) #here, isfile will  work as the entered is file or folder is this file return true
+# print(os.path.isdir('sree'))  #here, isdir will work as the entered is file or folder is this folder return true
+
+# with open('employee_records.csv','a') as m:
+    # print(m.read())
+    # m.seek(0)
+    # m.write('hello harshad\n')
+    # m.seek(0)
+    # print(m.read())
+
+# with open('employee_records.txt','x')  as p:
+#     p.write('hello everyone')
