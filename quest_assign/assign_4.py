@@ -70,40 +70,10 @@ def add_patient():
     patient_id = 'P'+ str(len(patients)+1).zfill(3)
     print('Patient Id:',patient_id)
 
-    # while True:
-    #     patient_id = input("Enter Patient ID: ")
-
-    #     duplicate_id = False
-
-    #     for patient in patients:
-    #         if patient.patient_id == patient_id:
-    #             duplicate_id = True
-    #             break
-
-    #     if duplicate_id:
-    #         print("Patient ID already exists. Please enter another ID.")
-    #     else:
-    #         break
-
-    while True:
-        name = input("Enter Patient Name: ").upper()
-
-        duplicate_name = False
-
-        for patient in patients:
-            if patient.name == name:
-                duplicate_name = True
-                break
-
-        if duplicate_name:
-            print("Patient name already exists. Please enter another name.")
-            continue
-
-        break
-
+    name = input("Enter Patient Name: ").upper()
     age = int(input("Enter Age: "))
     gender = input("Enter Gender: ")
-    contact = input("Enter Contact Number: ")
+    contact = int(input("Enter Contact Number: "))
 
     patient = Patient(
         patient_id,
@@ -137,41 +107,9 @@ def add_doctor():
     print("==========================================")
 
     doctor_id = 'D'+ str(len(doctors)+1).zfill(3)
-
-    # while True:
-    #     doctor_id = input("Enter Doctor ID: ")
-
-    #     duplicate_id = False
-
-    #     for doctor in doctors:
-    #         if doctor.doctor_id == doctor_id:
-    #             duplicate_id = True
-    #             break
-
-    #     if duplicate_id:
-    #         print("Doctor ID already exists. Please enter another ID.")
-    #     else:
-    #         break
-
-    while True:
-        name = input("Enter Doctor Name: ").upper()
-
-
-        duplicate_name = False
-
-        for doctor in doctors:
-            if doctor.name == name:
-                duplicate_name = True
-                break
-
-        if duplicate_name:
-            print("Doctor name already exists. Please enter another name.")
-            continue
-
-        break
-
+    name = input("Enter Doctor Name: ").upper()
     specialization = input("Enter Specialization: ")
-    contact = input("Enter Contact Number: ")
+    contact = int(input("Enter Contact Number: "))
 
     doctor = Doctor(
         doctor_id,
@@ -334,9 +272,9 @@ def appointment_summary():
             appointment.appointment_id,
             "\t",
             appointment.patient.name,
-            "\t\t",
+            "\t",
             appointment.doctor.name,
-            "\t\t",
+            "\t",
             appointment.appointment_date,
             "\t",
             appointment.appointment_time,
