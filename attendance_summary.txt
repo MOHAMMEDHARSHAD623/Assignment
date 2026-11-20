@@ -1,0 +1,50 @@
+========================================
+       EMPLOYEE ATTENDANCE SUMMARY
+========================================
+
+Employee ID   : E001
+Employee Name : harshad
+Present       : 1
+Absent        : 1
+Attendance    : 50.00%
+Warning       : Attendance below 75%
+----------------------------------------
+Employee ID   : E002
+Employee Name : adhi
+Present       : 1
+Absent        : 1
+Attendance    : 50.00%
+Warning       : Attendance below 75%
+----------------------------------------
+Employee ID   : E003
+Employee Name : malavika
+Present       : 0
+Absent        : 1
+Attendance    : 0.00%
+Warning       : Attendance below 75%
+----------------------------------------
+Employee ID   : E004
+Employee Name : sreeraj
+Present       : 0
+Absent        : 1
+Attendance    : 0.00%
+Warning       : Attendance below 75%
+----------------------------------------
+Employee ID   : E005
+Employee Name : anagha
+Present       : 1
+Absent        : 0
+Attendance    : 100.00%
+----------------------------------------
+Employee ID   : E006
+Employee Name : joshva
+Present       : 1
+Absent        : 0
+Attendance    : 100.00%
+----------------------------------------
+Employee ID   : E007
+Employee Name : adhithyan
+Present       : 1
+Absent        : 0
+Attendance    : 100.00%
+----------------------------------------

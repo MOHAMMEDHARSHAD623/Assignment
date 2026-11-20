@@ -153,12 +153,12 @@ write lines"""
 
 
 """ os.path.exist - used for checking the file is exist or not.if yes,it will return  true using os.path.exist()
-os.rename - used for rename the  file name using os.rename()
+os.rename - used for rename the file name using os.rename()
 os.remove - used for remove or delete  the file using os.remove()
 os.mkdir -  used for create a new folder using os.mkdir() existing couldn't support
 os.makedirs - used for create inner file or folders using os.makedirs()
-os.rmdir - used for remove folders using os.rmdir() if the  file is not empty is not works
-shutil.rmtree - used for  remove multiple folders using shutil.rmtree()
+os.rmdir - used for remove folders using os.rmdir() if the file is not empty is not works
+shutil.rmtree - used for remove multiple folders using shutil.rmtree()
 os.listdir - used for listing the dir by using print(os.listdir('.'))
 os.getcwd() - used for checking which directory user is in by using print(os.getcwd()) 
 os.chdir() -  used for changing directory using os.chdir('path) but it only works  for that script
